@@ -20,7 +20,13 @@ android {
         multiDexEnabled true
     }
     buildTypes {
+
+        debug {
+            resValue "string", "google_map_key", "AIzaSyAp_l68TyymmIW_UErSKRjtz8xSBjoi6Wc"
+        }
         release {
+            resValue "string", "google_map_key", "AIzaSyAp_l68TyymmIW_UErSKRjtz8xSBjoi6Wc"
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
